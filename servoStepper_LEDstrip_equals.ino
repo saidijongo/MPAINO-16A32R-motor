@@ -107,7 +107,7 @@ void setup() {
 void loop() {
   for (int i = 0; i < numPumps; i++) {
     if (millis() >= pumpStartTimes[i] && digitalRead(motorPins[i]) == HIGH) {
-      deactivateMotor(motorPins[i]); // Turn off the pump when the run time has elapsed
+      deactivateMotor(motorPins[i]);
     }
   }
 
